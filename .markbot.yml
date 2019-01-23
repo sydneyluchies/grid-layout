@@ -1,0 +1,41 @@
+repo: 'grid-layout'
+canvasCourse: 'web-dev-2'
+
+inherit:
+  - naming-restrict-live
+  - git-2
+  - html
+  - css-order-grid-main
+  - css
+  - google-fonts
+  - img-flex
+  - responsive-css
+  - screenshots-all
+
+html:
+  - path: 'index.html'
+    has:
+      - ['link[href*="Open+Sans"]', 'The Google Font, `Open Sans` (regular) is missing']
+      - 'h1'
+      - 'h2'
+      - 'p'
+      - 'dl'
+      - 'dl > dt'
+      - 'dl > dd'
+      - 'figure'
+      - 'figure > figcaption'
+    has_not:
+      - 'br'
+    search:
+      - 'The Seven Wonders of the Ancient World'
+      - 'Temple of Artemis'
+      - 'Selçuk, Turkey'
+      - 'Colossus of Rhodes'
+      - 'Rhodes, Greece'
+      - 'Hanging Gardens of Babylon'
+      - 'Temple of Artemis'
+
+css:
+  - path: 'css/main.css'
+    has:
+      - ['html', 'font-family', '"Open Sans", sans-serif']
